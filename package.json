@@ -17,5 +17,8 @@
   "packageManager": "yarn@1.22.19",
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^13.0.0"
   }
 }
