@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
+import RootNavigation from "./src/navigation";
 export default function Native() {
-  return <View style={styles.container}></View>;
+  return <RootNavigation />;
 }
 
 const styles = StyleSheet.create({
