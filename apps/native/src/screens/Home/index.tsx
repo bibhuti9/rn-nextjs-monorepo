@@ -1,18 +1,12 @@
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import React from "react";
-import { Button } from "@repo/ui";
-
-import { Routes } from "../../navigation/routes";
-import Icon from "react-native-vector-icons/Feather";
-import { push } from "@utils/navigation";
+import { getUsers } from "../../../../../packages/ui/src/apis/index";
 export default function HomeScreen() {
+  const result = getUsers();
+
   return (
     <View>
-      <Icon name="plus" size={30} />
-      <Button
-        text="Navigate to add task"
-        onClick={() => push({ screenName: Routes.AddTask })}
-      />
+      <Text>{JSON.stringify(result, null, 2)}</Text>
     </View>
   );
 }

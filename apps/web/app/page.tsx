@@ -1,14 +1,13 @@
 "use client";
 
-import { Button } from "@repo/ui";
-
 import styles from "../styles/index.module.css";
+import { getUsers } from "../../../packages/ui/src/apis/index";
 
 export default function Web() {
+  const result = getUsers();
   return (
     <div className={styles.container}>
-      <h1>Web</h1>
-      <Button onClick={() => console.log("Pressed!")} text="Boop" />
+      <h3>{JSON.stringify(result, null, 2)}</h3>
     </div>
   );
 }
