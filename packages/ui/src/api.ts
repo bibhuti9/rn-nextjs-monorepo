@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getQuoteApi } from "../../../../apps/web/app/api/quote";
+import { getQuoteApi } from "../../../apps/web/app/api/quote";
 
 export interface quoteType {
   _id: string;
